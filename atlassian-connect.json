@@ -1,0 +1,228 @@
+{
+  "name": "EG Ultimate Connect App",
+  "description": "Economy Growth owned ultimate Connect app. The app is used for testing purposes in staging. It aims to be universal in terms of installation locations. After app installation, it should be available in all possible locations of the Atlassian product.",
+  "key": "com.eg-ultimate-connect-app.myapp",
+  "baseUrl": "https://56b47d140dff.ngrok.io",
+  "vendor": {
+      "name": "Atlassian Economy Growth",
+      "url": "https://hello.atlassian.net/wiki/spaces/ECON/pages/1310672589/Economy+Growth+EG"
+  },
+  "authentication": {
+      "type": "none"
+  },
+  "scopes": [
+    "read",
+    "write"
+  ],
+  "apiVersion": 1,
+  "modules": {
+      "generalPages": [
+        {
+            "url": "/helloworld.html",
+            "key": "eg-ultimate-connect-system-top-navigation-bar",
+            "location": "system.top.navigation.bar",
+            "name": {
+                "value": "EG Ultimate Connect App"
+            },
+            "icon": {
+              "width": 16,
+              "height": 16,
+              "url": "/dandelion.png"
+            }
+        }
+      ],
+      "webSections": [
+        {
+          "key": "eg-ultimate-connect-menu-section",
+          "location": "admin_plugins_menu",
+          "name": {
+              "value": "EG Ultimate Connect App"
+          }
+        }
+      ],
+        "webItems": [
+          {
+            "key": "eg-ultimate-connect-section-link",
+            "location": "admin_plugins_menu/eg-ultimate-connect-menu-section",
+            "name": {
+                "value": "EG Ultimate Connect App"
+            },
+            "url": "/helloworld.html"
+          },
+          {
+              "key": "eg-ultimate-connect-operations-operations",
+              "location": "operations-operations",
+              "weight": 10,
+              "name": {
+                "value": "EG Ultimate Connect App"
+              },
+              "url": "/helloworld.html"
+          },
+          {
+            "key": "eg-ultimate-connect-personal-link",
+            "location": "system.user.options/personal",
+            "name": {
+                "value": "EG Ultimate Connect App"
+            },
+            "url": "/helloworld.html"
+          }
+        ],
+        "jiraProjectPages": [
+          {
+            "url": "/helloworld.html",
+            "iconUrl": "/dandelion.png",
+            "weight": 100,
+            "name": {
+              "value": "EG Ultimate Connect App"
+            },
+            "key": "eg-ultimate-connect-project-page"
+          }
+        ],
+        "webPanels": [
+          {
+              "key": "eg-ultimate-connect-issue-view-left-context",
+              "location": "atl.jira.view.issue.left.context",
+              "name": {
+                  "value": "EG Ultimate Connect App"
+              },
+              "url": "/helloworld.html"         
+          },
+          {
+              "key": "eg-ultimate-connect-issue-view-right-context",
+              "location": "atl.jira.view.issue.right.context",
+              "name": {
+                  "value": "EG Ultimate Connect App"
+              },
+              "url": "/helloworld.html"          
+          }
+      ],
+      "jiraIssueContents": [
+        {
+          "icon": {
+            "width": 16,
+            "height": 16,
+            "url": "/dandelion.png"
+          },
+          "target": {
+            "type": "web_panel",
+            "url": "/helloworld.html"
+          },
+          "tooltip": {
+            "value": "EG Ultimate Connect App"
+          },
+          "jiraNativeAppsEnabled": false,
+          "name": {
+            "value": "EG Ultimate Connect App"
+          },
+          "key": "eg-ultimate-connect-issue-content-panel"
+        }
+      ],
+      "jiraIssueFields": [
+        {
+          "description": {
+            "value": "field with team"
+          },
+          "type": "single_select",
+          "extractions": [
+            {
+              "path": "category",
+              "type": "text",
+              "name": "categoryName"
+            }
+          ],
+          "name": {
+            "value": "EG Ultimate Connect App"
+          },
+          "key": "eg-ultimate-connect-issue-content-panel-issue-field"
+        }
+      ],
+      "jiraIssueGlances": [
+        {
+          "icon": {
+            "width": 16,
+            "height": 16,
+            "url": "/dandelion.png"
+          },
+          "content": {
+            "type": "label",
+            "label": {
+              "value": "EG Ultimate Connect App"
+            }
+          },
+          "target": {
+            "type": "web_panel",
+            "url": "/helloworld.html"
+          },
+          "jiraNativeAppsEnabled": false,
+          "name": {
+            "value": "EG Ultimate Connect App"
+          },
+          "key": "eg-ultimate-connect-issue-glance"
+        }
+      ],
+      "adminPages": [
+        {
+          "url": "/helloworld.html",
+          "name": {
+            "value": "EG Ultimate Connect App"
+          },
+          "key": "eg-ultimate-connect-admin-page"
+        }
+      ],
+      "configurePage": {
+        "url": "/helloworld.html",
+        "name": {
+          "value": "EG Ultimate Connect App"
+        },
+        "key": "eg-ultimate-connect-config-page"
+      },
+      "jiraDashboardItems": [
+        {
+          "description": {
+            "value": "Dashboard item description"
+          },
+          "url": "/helloworld.html",
+          "configurable": true,
+          "thumbnailUrl": "dandelion.png",
+          "name": {
+            "value": "EG Ultimate Connect App"
+          },
+          "key": "eg-ultimate-connect-dashboard-item"
+        }
+      ],
+      "jiraProjectAdminTabPanels": [
+        {
+          "location": "projectgroup1",
+          "url": "/helloworld.html",
+          "weight": 100,
+          "name": {
+            "value": "EG Ultimate Connect App"
+          },
+          "key": "eg-ultimate-connect-admin-panel"
+        }
+      ],
+      "jiraProjectPermissions": [
+        {
+          "description": {
+            "value": "Custom project permission for attachments"
+          },
+          "category": "attachments",
+          "name": {
+            "value": "EG Ultimate Connect App"
+          },
+          "key": "eg-ultimate-connect-project-permission"
+        }
+      ],
+      "jiraIssueTabPanels": [
+        {
+          "url": "/helloworld.html",
+          "weight": 100,
+          "name": {
+            "value": "EG Ultimate Connect App"
+          },
+          "key": "eg-ultimate-connect-issue-tab"
+        }
+      ]
+      
+  }
+}
